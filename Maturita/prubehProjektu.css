@@ -1,0 +1,129 @@
+/* Reset základních stylů */
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hlavní tělo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hlavička */
+#header {
+    background-color: #282c34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#header h1 {
+    margin-bottom: 10px;
+}
+
+#header h2 {
+    font-weight: normal;
+}
+
+/* Sekce s obsahem */
+div {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Seznam kroků projektu */
+#project-timeline ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#project-timeline ul li {
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    margin: 10px 0;
+    padding: 15px 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#project-timeline ul li strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+#project-timeline ul li em {
+    color: #555;
+    font-size: 0.95em;
+    font-style: italic;
+}
+
+/* Sekce pro poznámky */
+#project-notes {
+    margin-top: 20px;
+}
+
+#notes-area {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: vertical;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#notes-area:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Galerie */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Zápatí */
+#footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+    margin-top: 40px;
+}
+
+#footer p {
+    margin: 0;
+}
